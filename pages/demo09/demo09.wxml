@@ -1,0 +1,27 @@
+<!-- .
+    1.轮播图外层容器 swiper
+    2.每一个轮播项 swiper-item
+    3.swiper标签 存在默认样式
+      1.width 100%
+      2.height 150px  image 存在默认宽度和高度 320 * 240
+      3.swiper 高度 无法实现由内容撑开
+    4.先找出来 原图的宽度和高度 等比例 给swiper 定 宽度和高度
+      原图的宽度和高度 1125*352px
+      swiper 宽度 / swiper 高度 = 原图的宽度 / 原图的高度
+      swiper 高度 = swiper 宽度 * 原图的高度 / 原图的宽度
+      heigth:100vw * 352 / 1125
+    autoplay 是否自动切换 自动轮播
+    interval 自动切换时间间隔
+    circular 是否采用衔接滑动	
+    indicator-dots	是否显示面板指示点	
+    indicator-color	指示点颜色	
+    indicator-active-color	当前选中的指示点颜色	
+. -->
+<swiper autoplay interval="2000" circular indicator-dots indicator-color="#0094ff" indicator-active-color="#ff0094">
+    <swiper-item>
+        <image src="https://gtms04.alicdn.com/tps/i4/TB1pgxYJXXXXXcAXpXXrVZt0FXX-640-200.jpg" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+        <image src="https://img.alicdn.com/imgextra/i3/106/O1CN01x3ah8j1CeafwId2Nf_!!106-0-luban.jpg" mode="widthFix"></image>
+    </swiper-item>
+</swiper>

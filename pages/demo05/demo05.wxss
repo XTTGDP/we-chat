@@ -1,0 +1,6 @@
+/* .
+1.引入的代码是通过 @import 来 引入 
+2.路径只能写相对路径
+.*/
+
+@import '../../style/common.wxss';
